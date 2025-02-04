@@ -1,0 +1,118 @@
+body{
+    margin: 0;
+    padding: 0;
+  }
+  body{
+    font-family: "Poppins" ,sans-serif;
+    height: 100vh;
+  }
+  .navbar{
+    display: flex;
+    height:100px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    padding-left:70px;
+    padding-right:70px;
+  }
+  .line{
+    height: 40px;
+    width: 0.9px;
+    background-color: white;
+    margin-left: 60px;
+  }
+  .grow-list{
+    flex: 2;
+  }
+  .list{
+    display: flex;
+    list-style: none;
+    font-family: "Montserrat";
+  }
+  .list-item{
+    margin-left: 60px;
+    position: relative;
+    font-size: 15px;
+    cursor: pointer;
+    color: white;
+  }
+  .navbar .grow-list .list .list-item:first-child{
+    font-weight: bold;
+  }
+  .navbar .grow-list .list .list-item:first-child::after{
+    content: "";
+    position: absolute;
+    height: 7px;
+    width: 1.2px;
+    background-color: #fff;
+    transform: rotate(-45deg);
+    top: 7px;
+    right: -10px;
+  
+  }
+  .navbar .grow-list .list .list-item:first-child::before{
+    content: "";
+    position: absolute;
+    height: 7px;
+    width: 1.2px;
+    background-color: #fff;
+    transform: rotate(45deg);
+    top: 7px;
+    right: -14px;
+  
+  }
+  .button-small{
+    background-color: rgb(175, 12, 183);
+    border: none;
+    padding: 9px 20px;
+    font-family: "Montserrat";
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+  }
+  .button-small:hover{
+    text-decoration: underline;
+    font-size: 9px 18px;
+    
+  }
+  .hero{
+    height: 120vh;
+    background-image: linear-gradient(to bottom,rgba(15, 15, 14, 0),rgba(11, 11, 12, 0)), url("assets/bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: white;
+  }
+  
+  .hero-heading{
+    font-size: 5rem;
+    max-width: 80%;
+    margin-top: 140px;
+    font-weight: 600px;
+    line-height: 100px;
+  }
+  
+  .hero-description{
+    font-weight: 500;
+    margin-top: -60px;
+    margin-bottom:150px;
+    font-size: 25px;
+    color: #fcf7f7;
+  }
+  
+  .button-large{
+    background-color: rgb(175, 12, 183);
+    border: none;
+    padding: 12px 20px;
+    font-size: 30px;
+    font-weight: 700;
+    font-family: 18px;
+    color: inherit;
+    cursor: pointer;
+    border-radius: 10px;
+    margin-top: -90px;
+  }
