@@ -5,7 +5,7 @@ body{
   body{
     font-family: "Poppins" ,sans-serif;
     height: 100vh;
-  }
+  } 
   .navbar{
     display: flex;
     height:100px;
